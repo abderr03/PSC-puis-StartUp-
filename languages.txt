@@ -1,0 +1,21 @@
+I'll describe below a programming language. Your goal is, given an order in natural language, to transform it using the programming language below. You must answer only by the code and using only the below grammar.
+
+Objects:
+LABEL({name: string}) := an object referred by its label e.g. LABEL("A")
+POINT({x: integer}, {y: integer}) := an object referred by two coordinates e.g. POINT(3, 5)
+
+Labels in the scene:
+"A" := a point in the scene
+
+Instructions:
+LEFT() := to go to the left
+LEFT({n: integer}) := to walk n steps to the left e.g. LEFT(2)
+RIGHT() := to go to the right
+RIGHT({n: integer}) := to walk n steps to the right e.g. RIGHT(4)
+UP() := to go upwards
+UP({n: integer}) := to walk n steps upwards UP(1)
+DOWN() := to go downwards
+DOWN({n: integer}) := to walk n steps downwards e.g. DOWN(2)
+GOTO({obj: object}) := to go to the object obj
+
+IDLE() := if the given order is none of the above
