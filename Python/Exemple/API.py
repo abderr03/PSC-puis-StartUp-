@@ -3,7 +3,7 @@
 
 from openai import OpenAI
 
-client = OpenAI(api_key='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')
+client = OpenAI(api_key='sk-...')
 
 stream = client.chat.completions.create(
     model="gpt-3.5-turbo",
